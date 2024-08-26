@@ -1,0 +1,1362 @@
+[
+  {
+    "name": "CREAM OF RICE",
+    "short_explanation": "EN LEZZETLİ PİRİNÇ KREMASI",
+    "slug": "cream-of-rice",
+    "price_info": {
+      "profit": 0,
+      "total_price": 239.0,
+      "discounted_price": null,
+      "price_per_servings": 11.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/cream-of-rice_1000_chocolate.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "30"
+  },
+  {
+    "name": "DEXTROSE",
+    "short_explanation": "KASLARDAKİ GLİKOJEN DEPOLARINI HIZLICA DOLDURUR",
+    "slug": "dextrose",
+    "price_info": {
+      "profit": 0,
+      "total_price": 349.0,
+      "discounted_price": null,
+      "price_per_servings": 8.72,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/dextrose_1000_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "32"
+  },
+  {
+    "name": "HYALURONIC ACID",
+    "short_explanation": "CİLTTE NEM TUTUCU GÖREVİ GÖRÜR",
+    "slug": "hyaluronic-acid",
+    "price_info": {
+      "profit": 0,
+      "total_price": 199.0,
+      "discounted_price": null,
+      "price_per_servings": 4.42,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/hyaluronic-acid_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "86"
+  },
+  {
+    "name": "L-TYROSINE",
+    "short_explanation": "DOPAMİN ÖNCÜSÜ",
+    "slug": "tyrosine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 199.0,
+      "discounted_price": null,
+      "price_per_servings": 4.42,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/tyrosine_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "77"
+  },
+  {
+    "name": "PUMP STIM FREE",
+    "short_explanation": "KAFEİNSİZ ANTRENMAN ÖNCESİ TAKVİYESİ",
+    "slug": "pump",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 19.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/pump_300_peach.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "27"
+  },
+  {
+    "name": "HEAVY DUTY PRE-WORKOUT",
+    "short_explanation": "SERT VE UZUN ANTRENMANLAR İÇİN",
+    "slug": "heavy-duty-preworkout",
+    "price_info": {
+      "profit": 0,
+      "total_price": 599.0,
+      "discounted_price": null,
+      "price_per_servings": 29.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/heavy-duty-preworkout_300_apple.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "21"
+  },
+  {
+    "name": "DEEP SLEEP",
+    "short_explanation": "UYKU ÖNCESİ TAKVİYESİ",
+    "slug": "deep-sleep",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 15.96,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/deep-sleep_150_raspberry.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "40"
+  },
+  {
+    "name": "OMEGA 3",
+    "short_explanation": "YÜKSEK EPA+DHA ORANI",
+    "slug": "omega3",
+    "price_info": {
+      "profit": 0,
+      "total_price": 269.0,
+      "discounted_price": null,
+      "price_per_servings": 5.98,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/omega3_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "63"
+  },
+  {
+    "name": "BETAINE",
+    "short_explanation": "KUVVET SPORLARI İÇİN İDEAL",
+    "slug": "betaine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 299.0,
+      "discounted_price": null,
+      "price_per_servings": 3.99,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/betaine_300_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "29"
+  },
+  {
+    "name": "MICELLAR CASEIN",
+    "short_explanation": "YAVAŞ SİNDİRİLEN PROTEİN KAYNAĞI",
+    "slug": "micellar-casein",
+    "price_info": {
+      "profit": 0,
+      "total_price": 599.0,
+      "discounted_price": null,
+      "price_per_servings": 37.44,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/micellar-casein_400_strawberry.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "5"
+  },
+  {
+    "name": "ELECTROLYTE BLEND",
+    "short_explanation": "DENGELİ ELEKTROLİT KARIŞIMI",
+    "slug": "electrolyte-blend",
+    "price_info": {
+      "profit": 0,
+      "total_price": 299.0,
+      "discounted_price": null,
+      "price_per_servings": 3.99,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/electrolyte-blend_150_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "37"
+  },
+  {
+    "name": "GLUTAMINE",
+    "short_explanation": "KASTA EN ÇOK BULUNAN AMİNO ASİT",
+    "slug": "glutamine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 199.0,
+      "discounted_price": null,
+      "price_per_servings": 8.29,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/glutamine_120_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "16"
+  },
+  {
+    "name": "CREATINE",
+    "short_explanation": "EN POPÜLER SPORCU TAKVİYESİ",
+    "slug": "creatine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 239.0,
+      "discounted_price": null,
+      "price_per_servings": 5.97,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/creatine_120_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "12"
+  },
+  {
+    "name": "L-THEANINE",
+    "short_explanation": "RAHATLAMA + ODAKLANMA",
+    "slug": "theanine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 199.0,
+      "discounted_price": null,
+      "price_per_servings": 4.42,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/theanine_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "78"
+  },
+  {
+    "name": "BROMELAIN",
+    "short_explanation": "PROTEİN SİNDİRİM ENZİMİ",
+    "slug": "bromelain",
+    "price_info": {
+      "profit": 0,
+      "total_price": 249.0,
+      "discounted_price": null,
+      "price_per_servings": 5.53,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/bromelain_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "84"
+  },
+  {
+    "name": "POST-WORKOUT+",
+    "short_explanation": "ANTRENMAN SONRASI TAKVİYESİ",
+    "slug": "post-workout-tm",
+    "price_info": {
+      "profit": 0,
+      "total_price": 599.0,
+      "discounted_price": null,
+      "price_per_servings": 33.28,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/post-workout-tm_720_strawberry.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "36"
+  },
+  {
+    "name": "BETA GLUCAN",
+    "short_explanation": "KUVVETLİ ANTİOKSİDAN",
+    "slug": "beta-glucan",
+    "price_info": {
+      "profit": 0,
+      "total_price": 199.0,
+      "discounted_price": null,
+      "price_per_servings": 4.42,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/beta-glucan_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "82"
+  },
+  {
+    "name": "RED DETOX+",
+    "short_explanation": "ZENGİN VİTAMİN VE MİNERAL KAYNAĞI",
+    "slug": "red-detox",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 13.3,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/red-detox_300_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "48"
+  },
+  {
+    "name": "VİTAMİN D3",
+    "short_explanation": "TEMEL VİTAMİN TAKVİYESİ",
+    "slug": "vitamin-d3",
+    "price_info": {
+      "profit": 0,
+      "total_price": 199.0,
+      "discounted_price": null,
+      "price_per_servings": 3.32,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/vitamin-d3_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "68"
+  },
+  {
+    "name": "MELATONIN",
+    "short_explanation": "DOĞAL ETKİLİ TAKVİYE",
+    "slug": "melatonin",
+    "price_info": {
+      "profit": 0,
+      "total_price": 249.0,
+      "discounted_price": null,
+      "price_per_servings": 4.15,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/melatonin_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "64"
+  },
+  {
+    "name": "VITAMIN K2",
+    "short_explanation": "K VİTAMİNİ TAKVİYESİ",
+    "slug": "vitamin-k2",
+    "price_info": {
+      "profit": 0,
+      "total_price": 179.0,
+      "discounted_price": null,
+      "price_per_servings": 3.98,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/vitamin-k2_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "69"
+  },
+  {
+    "name": "BCAA 4:1:1",
+    "short_explanation": "DAHA ÇOK LÖSİN",
+    "slug": "bcaa-411",
+    "price_info": {
+      "profit": 0,
+      "total_price": 219.0,
+      "discounted_price": null,
+      "price_per_servings": 9.13,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/bcaa-411_120_apple.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "14"
+  },
+  {
+    "name": "MCT OIL",
+    "short_explanation": "KETON KAYNAĞI",
+    "slug": "mctoil",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 13.3,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/mctoil_150_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "46"
+  },
+  {
+    "name": "CHROMIUM PICOLINATE",
+    "short_explanation": "YÜKSEK EMİLİMLİ KROM",
+    "slug": "chromium",
+    "price_info": {
+      "profit": 0,
+      "total_price": 179.0,
+      "discounted_price": null,
+      "price_per_servings": 2.98,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/chromium_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "72"
+  },
+  {
+    "name": "CAFFEINE",
+    "short_explanation": "DİKKAT + ENERJİ + KONSANTRASYON",
+    "slug": "caffeine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 229.0,
+      "discounted_price": null,
+      "price_per_servings": 3.82,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/caffeine_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "26"
+  },
+  {
+    "name": "PRE-WORKOUT SUPREME",
+    "short_explanation": "ANTRENMAN ÖNCESİ TAKVİYESİ",
+    "slug": "preworkout",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 19.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/preworkout_300_apple.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "22"
+  },
+  {
+    "name": "SPINACH POWDER",
+    "short_explanation": "EN BESLEYİCİ SEBZE TOZU",
+    "slug": "spinach-powder",
+    "price_info": {
+      "profit": 0,
+      "total_price": 299.0,
+      "discounted_price": null,
+      "price_per_servings": 9.97,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/spinach-powder_300_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "51"
+  },
+  {
+    "name": "SELENIUM",
+    "short_explanation": "SAÇ + TIRNAK",
+    "slug": "selenium",
+    "price_info": {
+      "profit": 0,
+      "total_price": 179.0,
+      "discounted_price": null,
+      "price_per_servings": 2.98,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/selenium_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "73"
+  },
+  {
+    "name": "HYDROPRIME",
+    "short_explanation": "PATENTLİ GLİSEROL TOZU",
+    "slug": "hydroprime",
+    "price_info": {
+      "profit": 120,
+      "total_price": 449.0,
+      "discounted_price": 329.0,
+      "price_per_servings": 8.22,
+      "discount_percentage": 27.0
+    },
+    "photo_src": "/media/hydroprime_120_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "23"
+  },
+  {
+    "name": "PREBIOTICS+",
+    "short_explanation": "PREBİYOTİK VE LİF KAYNAĞI",
+    "slug": "prebiotics",
+    "price_info": {
+      "profit": 0,
+      "total_price": 349.0,
+      "discounted_price": null,
+      "price_per_servings": 4.36,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/prebiotics_240_peach.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "44"
+  },
+  {
+    "name": "MULTIVITAMIN",
+    "short_explanation": "GÜNLÜK VİTAMİN VE MİNERAL İHTİYACINIZ",
+    "slug": "multivitamin",
+    "price_info": {
+      "profit": 0,
+      "total_price": 249.0,
+      "discounted_price": null,
+      "price_per_servings": 8.3,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/multivitamin_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "41"
+  },
+  {
+    "name": "GINGKO BILOBA",
+    "short_explanation": "ETKİLİ DOĞAL DESTEK",
+    "slug": "gingko-biloba",
+    "price_info": {
+      "profit": 0,
+      "total_price": 229.0,
+      "discounted_price": null,
+      "price_per_servings": 5.09,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/ginkgo-biloba_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "81"
+  },
+  {
+    "name": "INULIN",
+    "short_explanation": "PREBİYOTİK VE LİF KAYNAĞI",
+    "slug": "inulin",
+    "price_info": {
+      "profit": 0,
+      "total_price": 349.0,
+      "discounted_price": null,
+      "price_per_servings": 3.49,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/inulin_300_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "45"
+  },
+  {
+    "name": "EAA+",
+    "short_explanation": "ESANSİYEL AMİNO ASİT KAYNAĞI",
+    "slug": "eaa",
+    "price_info": {
+      "profit": 0,
+      "total_price": 219.0,
+      "discounted_price": null,
+      "price_per_servings": 18.25,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/eaa_120_apple.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "17"
+  },
+  {
+    "name": "COLLAGEN",
+    "short_explanation": "VÜCUTTAKİ EN BOL PROTEİN",
+    "slug": "collagen",
+    "price_info": {
+      "profit": 0,
+      "total_price": 449.0,
+      "discounted_price": null,
+      "price_per_servings": 19.69,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/collagen_250_raspberry.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "9"
+  },
+  {
+    "name": "WHEY PROTEIN",
+    "short_explanation": "En Saf Whey",
+    "slug": "whey-protein",
+    "price_info": {
+      "profit": 0,
+      "total_price": 549.0,
+      "discounted_price": null,
+      "price_per_servings": 31.31,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/whey-protein_400_biscuit.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "3"
+  },
+  {
+    "name": "5-HTP",
+    "short_explanation": "SEROTONİN ÖNCÜSÜ",
+    "slug": "5-htp",
+    "price_info": {
+      "profit": 0,
+      "total_price": 229.0,
+      "discounted_price": null,
+      "price_per_servings": 7.63,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/5-htp_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "76"
+  },
+  {
+    "name": "TAURINE",
+    "short_explanation": "ENERJİ İÇECEKLERİNDE EN YAYGIN KULLANILAN ÜRÜN",
+    "slug": "taurine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 249.0,
+      "discounted_price": null,
+      "price_per_servings": 2.49,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/taurine_300_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "19"
+  },
+  {
+    "name": "MACA ROOT POWDER",
+    "short_explanation": "DOĞAL VİTAMİN - MİNERAL KAYNAĞI",
+    "slug": "maca-root-powder",
+    "price_info": {
+      "profit": 0,
+      "total_price": 349.0,
+      "discounted_price": null,
+      "price_per_servings": 8.72,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/maca-root-powder_120_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "50"
+  },
+  {
+    "name": "PEA PROTEIN",
+    "short_explanation": "EN POPÜLER VEGAN PROTEİN KAYNAĞI",
+    "slug": "pea-protein",
+    "price_info": {
+      "profit": 0,
+      "total_price": 349.0,
+      "discounted_price": null,
+      "price_per_servings": 21.81,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/pea-protein_400_strawberry.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "4"
+  },
+  {
+    "name": "SWEETENER",
+    "short_explanation": "DÜŞÜK KALORİLİ TATLANDIRICI",
+    "slug": "sweetener",
+    "price_info": {
+      "profit": 0,
+      "total_price": 299.0,
+      "discounted_price": null,
+      "price_per_servings": null,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/sweetener_150_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "39"
+  },
+  {
+    "name": "MILK PROTEIN",
+    "short_explanation": "%80 KAZEIN, %20 WHEY PROTEİNİ",
+    "slug": "milk-protein",
+    "price_info": {
+      "profit": 0,
+      "total_price": 699.0,
+      "discounted_price": null,
+      "price_per_servings": 43.69,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/milk-protein_400_strawberry.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "7"
+  },
+  {
+    "name": "LEUCINE",
+    "short_explanation": "%100 LÖSİN",
+    "slug": "leucine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 499.0,
+      "discounted_price": null,
+      "price_per_servings": 8.32,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/leucine_300_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "20"
+  },
+  {
+    "name": "ZMA",
+    "short_explanation": "ÇİNKO - MAGNEZYUM - B6 VİTAMİNİ",
+    "slug": "zma",
+    "price_info": {
+      "profit": 0,
+      "total_price": 249.0,
+      "discounted_price": null,
+      "price_per_servings": 5.43,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/zma_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "62"
+  },
+  {
+    "name": "GAMER MULTIVITAMIN",
+    "short_explanation": "UZUN SÜRE EKRAN BAŞINDA KALANLAR İÇİN",
+    "slug": "gamer-multi",
+    "price_info": {
+      "profit": 0,
+      "total_price": 349.0,
+      "discounted_price": null,
+      "price_per_servings": 11.63,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/gamer-multi_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "55"
+  },
+  {
+    "name": "FISTIK EZMESİ",
+    "short_explanation": "%100 DOĞAL, KATKISIZ FISTIK EZMESİ",
+    "slug": "fistik-ezmesi",
+    "price_info": {
+      "profit": 0,
+      "total_price": 299.0,
+      "discounted_price": null,
+      "price_per_servings": null,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/fistik-ezmesi_650_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "38"
+  },
+  {
+    "name": "ARGININE",
+    "short_explanation": "%100 ARGININE",
+    "slug": "arginine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 229.0,
+      "discounted_price": null,
+      "price_per_servings": 9.54,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/arginine_120_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "18"
+  },
+  {
+    "name": "C VİTAMİNİ EFERVESAN",
+    "short_explanation": "C VİTAMİNİ + ÇİNKO + D VİTAMİNİ",
+    "slug": "c-vitamini-efervesan",
+    "price_info": {
+      "profit": 0,
+      "total_price": 159.0,
+      "discounted_price": null,
+      "price_per_servings": 7.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/c-vitamini-efervesan_1_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "42"
+  },
+  {
+    "name": "EGG WHITE POWDER",
+    "short_explanation": "PROTEİNİN ALTIN STANDARTI",
+    "slug": "egg-white-powder",
+    "price_info": {
+      "profit": 0,
+      "total_price": 899.0,
+      "discounted_price": null,
+      "price_per_servings": 56.19,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/egg-white-powder_400_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "6"
+  },
+  {
+    "name": "VITAMIN B12",
+    "short_explanation": "EN ETKİLİ B12 FORMU",
+    "slug": "b12vitamini",
+    "price_info": {
+      "profit": 0,
+      "total_price": 199.0,
+      "discounted_price": null,
+      "price_per_servings": 3.32,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/b12vitamini_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "67"
+  },
+  {
+    "name": "HUNGER BUSTER",
+    "short_explanation": "DİYETLERDE DOĞAL DESTEK",
+    "slug": "hunger-buster",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 13.3,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/hunger-buster_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "53"
+  },
+  {
+    "name": "GLUCOSAMINE CHONDROITIN MSM",
+    "short_explanation": "ETKİLİ FORMÜL",
+    "slug": "glucosamine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 449.0,
+      "discounted_price": null,
+      "price_per_servings": 22.45,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/glucosamine_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "65"
+  },
+  {
+    "name": "CITRULLINE",
+    "short_explanation": "%100 CITRULLINE",
+    "slug": "citrulline",
+    "price_info": {
+      "profit": 0,
+      "total_price": 229.0,
+      "discounted_price": null,
+      "price_per_servings": 1.91,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/citrulline_120_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "24"
+  },
+  {
+    "name": "VEGAN GAINER",
+    "short_explanation": "VEGANLAR İÇİN YÜKSEK PROTEİNLİ VE KALORİLİ ÖĞÜN",
+    "slug": "vegan-gainer",
+    "price_info": {
+      "profit": 0,
+      "total_price": 999.0,
+      "discounted_price": null,
+      "price_per_servings": 36.96,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/vegan-gainer_2500_strawberry.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "11"
+  },
+  {
+    "name": "CLA",
+    "short_explanation": "KOLAY TÜKETİLEBİLEN SOFTGEL FORMU",
+    "slug": "cla-softgel",
+    "price_info": {
+      "profit": 0,
+      "total_price": 199.0,
+      "discounted_price": null,
+      "price_per_servings": 13.27,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/cla-softgel_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "35"
+  },
+  {
+    "name": "BEAUTY FORMULA",
+    "short_explanation": "GÜZELLİK FORMÜLÜ",
+    "slug": "hair-nails-skin",
+    "price_info": {
+      "profit": 0,
+      "total_price": 299.0,
+      "discounted_price": null,
+      "price_per_servings": 9.97,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/hair-nails-skin_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "59"
+  },
+  {
+    "name": "COENZYME Q 10",
+    "short_explanation": "GÜÇLÜ BİR ANTİOKSİDAN",
+    "slug": "coenzyme",
+    "price_info": {
+      "profit": 0,
+      "total_price": 239.0,
+      "discounted_price": null,
+      "price_per_servings": 7.97,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/coenzyme_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "83"
+  },
+  {
+    "name": "GLUTATHIONE",
+    "short_explanation": "ÖNEMLİ BİR ANTİOKSİDAN",
+    "slug": "glutathione",
+    "price_info": {
+      "profit": 0,
+      "total_price": 249.0,
+      "discounted_price": null,
+      "price_per_servings": 8.3,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/glutathione_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "85"
+  },
+  {
+    "name": "SAW PALMETTO",
+    "short_explanation": "CÜCE PALMİYE EKSTRESİ",
+    "slug": "saw-palmetto",
+    "price_info": {
+      "profit": 0,
+      "total_price": 229.0,
+      "discounted_price": null,
+      "price_per_servings": 5.09,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/saw-palmetto_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "79"
+  },
+  {
+    "name": "GREEN DETOX+",
+    "short_explanation": "SEBZE TÜKETMENİN KOLAY YOLU",
+    "slug": "green-detox",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 13.3,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/green-detox_300_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "47"
+  },
+  {
+    "name": "GAMER HACK",
+    "short_explanation": "NOOTROPİC ETKİ",
+    "slug": "gamer-hack",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 19.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/gamer-hack_120_berryblast.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "34"
+  },
+  {
+    "name": "RELAX",
+    "short_explanation": "KORTİZOL YÖNETİMİ",
+    "slug": "relax",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 19.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/relax_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "58"
+  },
+  {
+    "name": "MILK THISTLE",
+    "short_explanation": "DEVEDİKENİ EKSTRESİ",
+    "slug": "milk-thistle",
+    "price_info": {
+      "profit": 0,
+      "total_price": 249.0,
+      "discounted_price": null,
+      "price_per_servings": 5.53,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/milk-thistle_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "74"
+  },
+  {
+    "name": "DIGESTION",
+    "short_explanation": "PATENTLİ SİNDİRİM ENZİMİ İÇERİR",
+    "slug": "digestion",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 9.97,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/digestion_120_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "43"
+  },
+  {
+    "name": "MASS GAINER",
+    "short_explanation": "YÜKSEK KALORİLİ PRATİK ÖĞÜN",
+    "slug": "mass-gainer",
+    "price_info": {
+      "profit": 0,
+      "total_price": 999.0,
+      "discounted_price": null,
+      "price_per_servings": 36.96,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/mass-gainer_2500_strawberry.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "10"
+  },
+  {
+    "name": "BETA ALANINE",
+    "short_explanation": "GÜÇ VE DAYANIKLILIK SPORLARI İÇİN İDEAL",
+    "slug": "beta-alanine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 299.0,
+      "discounted_price": null,
+      "price_per_servings": 2.99,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/beta-alanine_300_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "28"
+  },
+  {
+    "name": "MAGNESIUM BISGLYCINATE",
+    "short_explanation": "EN ETKİLİ MAGNEZYUM FORMU",
+    "slug": "mag-bisglisinate",
+    "price_info": {
+      "profit": 0,
+      "total_price": 229.0,
+      "discounted_price": null,
+      "price_per_servings": 5.09,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/mag-bisglisinate_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "70"
+  },
+  {
+    "name": "CREATINE CREAPURE",
+    "short_explanation": "PATENTLİ ALMAN HAMMADDE",
+    "slug": "creatine-creapure",
+    "price_info": {
+      "profit": 0,
+      "total_price": 599.0,
+      "discounted_price": null,
+      "price_per_servings": 7.22,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/creatine-creapure_250_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "13"
+  },
+  {
+    "name": "WHEY ISOLATE",
+    "short_explanation": "%90 PROTEİNLİ EN SAF WHEY",
+    "slug": "whey-isolate",
+    "price_info": {
+      "profit": 0,
+      "total_price": 749.0,
+      "discounted_price": null,
+      "price_per_servings": 46.81,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/whey-isolate_400_biscuit.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "2"
+  },
+  {
+    "name": "PANAX GINSENG",
+    "short_explanation": "GÜÇLÜ BİR ANTİOKSİDAN",
+    "slug": "ginseng",
+    "price_info": {
+      "profit": 0,
+      "total_price": 249.0,
+      "discounted_price": null,
+      "price_per_servings": 5.53,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/ginseng_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "80"
+  },
+  {
+    "name": "ULTRA FOCUS",
+    "short_explanation": "NOOTROPIC + MAKSIMUM DOZ",
+    "slug": "ultra-mind",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 19.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/ultra-mind_120_peach.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "33"
+  },
+  {
+    "name": "COLLAGEN + HYALURONIC ACID",
+    "short_explanation": "KOMPLEKS FORMÜL",
+    "slug": "collagen-tablet",
+    "price_info": {
+      "profit": 0,
+      "total_price": 199.0,
+      "discounted_price": null,
+      "price_per_servings": 6.63,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/collagen-tablet_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "66"
+  },
+  {
+    "name": "BROCCOLI POWDER",
+    "short_explanation": "VİTAMİN VE MİNERAL KAYNAĞI",
+    "slug": "broccoli-powder",
+    "price_info": {
+      "profit": 0,
+      "total_price": 299.0,
+      "discounted_price": null,
+      "price_per_servings": 9.97,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/broccoli-powder_300_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "49"
+  },
+  {
+    "name": "TRIBULUS TERRESTRIS",
+    "short_explanation": "DEMİR DİKENİ EKSTRESİ",
+    "slug": "tribulus-terrestris",
+    "price_info": {
+      "profit": 0,
+      "total_price": 299.0,
+      "discounted_price": null,
+      "price_per_servings": 6.64,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/tribulus-terrestris_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "75"
+  },
+  {
+    "name": "L-CARNITINE",
+    "short_explanation": "TOZ FORMU SAYESİNDE KOLAY TÜKETİM",
+    "slug": "l-carnitine",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 7.98,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/l-carnitine_150_apple.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "15"
+  },
+  {
+    "name": "LVR",
+    "short_explanation": "KOMPLEKS FORMÜL",
+    "slug": "liver",
+    "price_info": {
+      "profit": 0,
+      "total_price": 499.0,
+      "discounted_price": null,
+      "price_per_servings": 24.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/liver_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "56"
+  },
+  {
+    "name": "FOCUS FORMULA",
+    "short_explanation": "NOOTROPIC",
+    "slug": "ultra-brain",
+    "price_info": {
+      "profit": 0,
+      "total_price": 349.0,
+      "discounted_price": null,
+      "price_per_servings": 13.96,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/ultra-brain_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "60"
+  },
+  {
+    "name": "GDA",
+    "short_explanation": "GLUCOSE DISPOSAL AGENT",
+    "slug": "gda",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 19.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/gda_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "61"
+  },
+  {
+    "name": "MALTODEXTRIN",
+    "short_explanation": "KASLARDAKİ GLİKOJEN DEPOLARINI HIZLICA DOLDURUR",
+    "slug": "maltodextrin",
+    "price_info": {
+      "profit": 0,
+      "total_price": 599.0,
+      "discounted_price": null,
+      "price_per_servings": 5.99,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/maltodextrin_2500_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "31"
+  },
+  {
+    "name": "PARSLEY POWDER",
+    "short_explanation": "VİTAMİN VE MİNERAL KAYNAĞI",
+    "slug": "parsley-powder",
+    "price_info": {
+      "profit": 0,
+      "total_price": 299.0,
+      "discounted_price": null,
+      "price_per_servings": 9.97,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/parsley-powder_300_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "52"
+  },
+  {
+    "name": "T-PRIME",
+    "short_explanation": "DOĞAL BİTKİSEL TAKVİYE",
+    "slug": "tprime",
+    "price_info": {
+      "profit": 0,
+      "total_price": 499.0,
+      "discounted_price": null,
+      "price_per_servings": 11.09,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/tprime_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "54"
+  },
+  {
+    "name": "SOYA PROTEIN",
+    "short_explanation": "VEGAN PROTEİN KAYNAĞI",
+    "slug": "soya-protein",
+    "price_info": {
+      "profit": 0,
+      "total_price": 449.0,
+      "discounted_price": null,
+      "price_per_servings": 28.06,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/soya-protein_400_strawberry.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "8"
+  },
+  {
+    "name": "IRON",
+    "short_explanation": "ETKİLİ DEMİR TAKVİYESİ",
+    "slug": "iron",
+    "price_info": {
+      "profit": 0,
+      "total_price": 179.0,
+      "discounted_price": null,
+      "price_per_servings": 3.98,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/iron_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "71"
+  },
+  {
+    "name": "KDNY",
+    "short_explanation": "ETKİLİ FORMÜL",
+    "slug": "kidney",
+    "price_info": {
+      "profit": 0,
+      "total_price": 399.0,
+      "discounted_price": null,
+      "price_per_servings": 19.95,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/kidney_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "57"
+  },
+  {
+    "name": "THERMO BURNER",
+    "short_explanation": "KUVVETLİ TERMOJENİK ETKİ",
+    "slug": "burner",
+    "price_info": {
+      "profit": 0,
+      "total_price": 349.0,
+      "discounted_price": null,
+      "price_per_servings": 11.63,
+      "discount_percentage": null
+    },
+    "photo_src": "/media/burner_.webp",
+    "comment_count": 0,
+    "average_star": 0.0,
+    "id": "25"
+  }
+]

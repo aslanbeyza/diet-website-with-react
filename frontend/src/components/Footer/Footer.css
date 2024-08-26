@@ -1,0 +1,100 @@
+.footer {
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.footer .footer-text {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.footer .footer-text .footer-star {
+  vertical-align: middle;
+}
+
+.footer .additional-text {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.footer .footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.footer .footer-list li {
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+}
+
+.footer .footer-list li a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-around !important;
+}
+
+.accordion-toggle {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.accordion-toggle::before {
+  content: "+";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+  color: #999;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .footer-list {
+    max-height: 0;
+  }
+
+  .footer .footer-list li {
+    text-align: left; /* Mobilde sola hizala */
+  }
+
+  .footer .footer-list.active {
+    max-height: 300px; /* Açıldığında liste yüksekliği */
+  }
+
+  .accordion-toggle {
+    text-align: left;
+  }
+}
+
+.allContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (min-width: 601px) {
+  .footer .footer-list {
+    max-height: none; /* Liste öğelerinin her boyutta görünmesini sağla */
+  }
+}

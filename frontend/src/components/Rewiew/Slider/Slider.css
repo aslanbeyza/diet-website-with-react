@@ -1,0 +1,44 @@
+/* Slider wrapper, slider ve butonlar */
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 120px auto;
+}
+
+/* Slider container */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Slider item stili */
+.slick-slide > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+/* Buton stilleri */
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .prev, .next {
+    left: 30px; /* Adjusted value for small screens */
+    right: 10px; /* Adjusted value for small screens */
+  }
+}
+
+@media (min-width: 600px) {
+  .prev, .next {
+    left: 30px; /* Adjusted value for larger screens */
+    right: 30px; /* Adjusted value for larger screens */
+  }
+}
