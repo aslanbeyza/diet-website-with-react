@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MegaMenu from './MegaMenu';
 import {
   AppBar, Toolbar, InputBase, IconButton, Box, Button, Menu, MenuItem, Typography, Link, Drawer, List, ListItem, ListItemText,
 } from '@mui/material';
@@ -10,6 +11,10 @@ import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import './Header.css';
+
+
+
+
 
 const StyledBadge = styled(Badge)(() => ({
   '& .MuiBadge-badge': {
@@ -28,6 +33,17 @@ const Header: React.FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+
+
+/*   const handleHover = (category: string) => {
+    setHovered(category);
+  };
+  
+  const handleLeave = () => {
+    setHovered(null);
+  };
+ */
+
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -42,16 +58,16 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <AppBar position="static" sx={{ display: 'flex', justifyContent: 'center', boxShadow: 'none', height: { xs: 'auto', sm: '175px', md: '169px' } }}>
-        <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '100%', padding: 0 }}>
-          <Box sx={{ flexDirection: { xs: 'column', sm: 'row', md: 'row' }, display: 'flex', justifyContent: { xs: 'space-around', sm: 'space-between', md: 'space-between' }, width: { xs: '88%', sm: '80%', md: '80%' }, alignItems: 'center', mb: { xs: '0px', sm: '20px', md: '20px' } }}>
+      <AppBar position="static" sx={{display: 'flex', justifyContent: 'center', boxShadow: 'none', height: { xs: 'auto', sm: '175px', md: '169px' }, }}>
+        <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '100%', padding: 0  }}>
+          <Box sx={{ flexDirection: { xs: 'column', sm: 'row', md: 'row' }, display: 'flex', justifyContent: { xs: 'space-around', sm: 'space-between', md: 'space-between' }, width: { xs: '88%', sm: '100%', md: '80%' }, mb: { xs: '0', sm: '20px', md: '15px' } , alignItems: 'center'}}>
             
             {/* Wrapper for Logo */}
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', width: { xs: '120%', sm: '15%', md: '15%' }, marginTop: { xs: '5%', sm: '0', md: '0' } }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', width: { xs: '120%', sm: '20%', md: '15%' }, marginTop: { xs: '5%', sm: '0', md: '0' } }}>
               <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleMobileMenuToggle} sx={{ display: { xs: 'flex', sm: 'none', md: 'none' } }}>
                 <MenuIcon />
               </IconButton>
-              <Logo src="/assets/blacklogo.png" alt="Logo" sx={{ width: { xs: '100px', sm: '150%', md: '120%' }, marginLeft: { xs: '0', sm: '-80px', md: '0' }, }} />
+              <Logo src="/assets/blacklogo.png" alt="Logo" sx={{ width: { xs: '100px', sm: '100%', md: '120%' }, marginLeft: { xs: '0', sm: '-10px', md: '-5px' }, }} />
               <Box sx={{ display: { xs: 'flex', sm: 'none', md: 'none' }, alignItems: 'center', width: { xs: '0', sm: '15%', md: '15%' } }}>
                   <StyledBadge badgeContent={1} color="secondary">
                     <ShoppingCartIcon />
@@ -99,6 +115,8 @@ const Header: React.FC = () => {
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
                   whiteSpace: 'nowrap',
+                  marginLeft: { xs: '0px', sm: '15px', md: '0px' },
+
                 }}
               >
                 Hesap
@@ -133,15 +151,31 @@ const Header: React.FC = () => {
         </Toolbar>
 
         <Box sx={{ display: { xs: 'none', sm: 'block', md: 'block' } }}>
-          <Box sx={{ display: 'flex', backgroundColor: '#333', padding: '10px 0', justifyContent: 'space-evenly', '& a': { color: 'white', textDecoration: 'none' }, '& a:hover': { textDecoration: 'underline' } }}>
-            <Link href="#">PROTEİN</Link>
-            <Link href="#">SPOR GIDALARI</Link>
-            <Link href="#">SAĞLIK</Link>
-            <Link href="#">GIDA</Link>
-            <Link href="#">VİTAMİN</Link>
-            <Link href="#">TÜM ÜRÜNLER</Link>
-          </Box>
+        <Box
+          sx={{
+            display: 'flex',
+            backgroundColor: '#333',
+            padding: '10px 0',
+            justifyContent: 'space-evenly',
+            '& a': { color: 'white', textDecoration: 'none' },
+            '& a:hover': { textDecoration: 'underline' },
+          }}
+        >
+          {['PROTEİN', 'SPOR GIDALARI', 'SAĞLIK', 'GIDA', 'VİTAMİN', 'TÜM ÜRÜNLER'].map((category) => (
+            <Link
+              href="#"
+              key={category}
+              /* onMouseEnter={() => handleHover(category)}
+              onMouseLeave={handleLeave}
+              onClick={() => handleHover(category)} */ // Mobil için tıklama olayı
+            >
+          {/*     {category} */}
+            </Link>
+          ))}
         </Box>
+        {/* Megamenü */}
+        <MegaMenu />
+      </Box>
       </AppBar>
 
       {/* Mobil Menu */}
@@ -211,5 +245,4 @@ const Header: React.FC = () => {
     </>
   );
 };
-
 export default Header;

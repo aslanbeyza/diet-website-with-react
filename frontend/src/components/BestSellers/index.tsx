@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import './style.css';
+
 import {
   Container,
   Grid,
@@ -39,19 +41,11 @@ const BestSellers: React.FC = () => {
       <Grid container spacing={3} mt={3} mb={3}>
         {loading
           ? Array.from(new Array(6)).map((_, index) => (
-              <Grid item key={index} xs={6} sm={4} md={4} lg={2}>
-                <Card sx={{ height: "330px", boxShadow: "none", display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'column' }}>
+              <Grid item key={index} xs={6} sm={4} md={4}>
+                <Card className="card">
                   <Skeleton variant="rectangular" height="60%" width="100%" />
                   <CardContent
-                    sx={{
-                      textAlign: "center",
-                      overflow: "visible",
-                      whiteSpace: "normal",
-                      height: "40%",
-                      width: "100%",
-                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                      flexDirection: 'column'
-                    }}
+                  className="cardContent"
                   >
                     <Skeleton variant="text" height={30} width="80%" />
                     <Skeleton variant="text" height={20} width="60%" />
@@ -65,7 +59,7 @@ const BestSellers: React.FC = () => {
             ))
           : products.map((product) => (
               <Grid item key={product.id} xs={6} sm={4} md={4} lg={2}>
-                <Card sx={{ height: "330px", boxShadow: "none", display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'column' }}>
+                <Card className="card">
                   <CardMedia
                     sx={{
                       height: { xs: "40%", sm: "40%", md: "40%" },
@@ -77,20 +71,18 @@ const BestSellers: React.FC = () => {
                     alt={product.name}
                   />
                   <CardContent
+                  className="cardContent"
                     sx={{
-                      textAlign: "center",
-                      overflow: "visible",
-                      whiteSpace: "normal",
                       height: { xs: "60%", sm: "60%", md: "60%" },
                       width: { xs: "100%", sm: "100%", md: "100%" },
-                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                      flexDirection: 'column'
+                      
                     }}
                   >
                     <Typography
                       gutterBottom
                       variant="h5"
                       component="div"
+                      className="productName"
                       sx={{ fontSize: "16px", fontWeight: "600", lineHeight: '18px' }}
                     >
                       {product.name}
@@ -110,12 +102,10 @@ const BestSellers: React.FC = () => {
                       {product.short_explanation}
                     </Typography>
                     <Typography
+                    className="productDescription"
                       variant="body2"
                       color="text.secondary"
-                      sx={{
-                        overflow: "visible",
-                        whiteSpace: "normal",
-                      }}
+                     
                     >
                       {product.description}
                     </Typography>
