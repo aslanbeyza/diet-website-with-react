@@ -1,4 +1,4 @@
-const {Sequelize} = require('sequelize');
+const { Sequelize } = require('sequelize');
 require('dotenv').config();
 
 const sequelize = new Sequelize(process.env.DB_DATABASE, process.env.DB_USER, process.env.DB_PASSWORD, {
@@ -29,29 +29,38 @@ db.User = require('./user')(sequelize, Sequelize);
 
 db.ProductCategory = sequelize.define('ProductCategory', {}, { timestamps: false });
 
-db.Address.belongsTo(db.User, {foreignKey: 'UserId'});
-db.User.hasMany(db.Address, {foreignKey: 'UserId'});
+// User and Address
+db.Address.belongsTo(db.User, { foreignKey: 'UserId' });
+db.User.hasMany(db.Address, { foreignKey: 'UserId' });
 
-db.Category.belongsToMany(db.Product, {through: db.ProductCategory});
-db.Product.belongsToMany(db.Category, {through: db.ProductCategory});
+// Category and Product (Many-to-Many)
+db.Category.belongsToMany(db.Product, { through: db.ProductCategory });
+db.Product.belongsToMany(db.Category, { through: db.ProductCategory });
 
-db.Order.belongsTo(db.User, {foreignKey: 'UserId'});
-db.User.hasMany(db.Order, {foreignKey: 'UserId'});
+// Order and User
+db.Order.belongsTo(db.User, { foreignKey: 'UserId' });
+db.User.hasMany(db.Order, { foreignKey: 'UserId' });
 
-db.Order.hasMany(db.OrderItem, {foreignKey: 'OrderId'});
-db.OrderItem.belongsTo(db.Product, {foreignKey: 'ProductId'});
+// OrderItem and Order
+db.Order.hasMany(db.OrderItem, { foreignKey: 'OrderId' });
+db.OrderItem.belongsTo(db.Order, { foreignKey: 'OrderId' });
 
-db.OrderItem.belongsTo(db.Product, {foreignKey: 'ProductId'});
+// OrderItem and Product
+db.OrderItem.belongsTo(db.Product, { foreignKey: 'ProductId' });
 
-db.Payment.belongsTo(db.Order, {foreignKey: 'OrderId'});
+// Payment and Order
+db.Payment.belongsTo(db.Order, { foreignKey: 'OrderId' });
 
-db.Product.hasOne(db.PriceInfo, {foreignKey: 'ProductId'});
-db.PriceInfo.belongsTo(db.Product, {foreignKey: 'ProductId'});
+// PriceInfo and Product
+db.Product.hasOne(db.PriceInfo, { foreignKey: 'ProductId' });
+db.PriceInfo.belongsTo(db.Product, { foreignKey: 'ProductId' });
 
-db.Product.hasMany(db.Review, {foreignKey: 'ProductId'});
-db.Review.belongsTo(db.Product, {foreignKey: 'ProductId'});
+// Review and Product
+db.Product.hasMany(db.Review, { foreignKey: 'ProductId' });
+db.Review.belongsTo(db.Product, { foreignKey: 'ProductId' });
 
-db.User.hasMany(db.Review, {foreignKey: 'UserId'});
-db.Review.belongsTo(db.User, {foreignKey: 'UserId'});
+// Review and User
+db.User.hasMany(db.Review, { foreignKey: 'UserId' });
+db.Review.belongsTo(db.User, { foreignKey: 'UserId' });
 
 module.exports = db;

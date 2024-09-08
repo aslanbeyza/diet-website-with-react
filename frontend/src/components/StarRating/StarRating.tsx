@@ -3,11 +3,13 @@ import { Box } from '@mui/material';
 import Star from './Star';
 
 interface StarRatingProps {
-  value: number;
+  value?: number;
+  rating?: number;
+  setRating?: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const StarRating: React.FC<StarRatingProps> = ({ value }) => {
-  const [rating, setRating] = React.useState<number>(parseInt(value.toString()) || 0);
+const StarRating: React.FC<StarRatingProps> = ({ value = 0, rating, setRating }) => {
+  const [internalRating, setInternalRating] = React.useState<number>(value);
   const [selection, setSelection] = React.useState<number>(0);
 
   const hoverOver = (event: React.MouseEvent<HTMLElement>) => {
@@ -19,13 +21,22 @@ const StarRating: React.FC<StarRatingProps> = ({ value }) => {
     setSelection(val);
   };
 
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    const target = event.target as HTMLElement;
+    const selectedRating = parseInt(target.getAttribute('data-star-id') || internalRating.toString());
+    
+    if (setRating) {
+      // `setRating` işlevini doğrudan değer olarak kullanıyoruz
+      setRating(selectedRating);
+    } else {
+      setInternalRating(selectedRating);
+    }
+  };
+
   return (
     <Box
-      onMouseOut={() => hoverOver({} as React.MouseEvent<HTMLElement>)}
-      onClick={(e) => {
-        const target = e.target as HTMLElement;
-        setRating(parseInt(target.getAttribute('data-star-id') || rating.toString()));
-      }}
+      onMouseOut={() => setSelection(0)}
+      onClick={handleClick}
       onMouseOver={hoverOver}
       sx={{
         display: 'inline-flex',
@@ -36,7 +47,7 @@ const StarRating: React.FC<StarRatingProps> = ({ value }) => {
         <Star
           starId={i + 1}
           key={`star_${i + 1}`}
-          marked={selection ? selection >= i + 1 : rating >= i + 1}
+          marked={selection ? selection >= i + 1 : (rating ?? internalRating) >= i + 1}
         />
       ))}
     </Box>

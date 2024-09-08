@@ -6,9 +6,10 @@ export const registerUser = async (userData: { name: string; lastName: string; e
     const response = await axios.post('http://localhost:5000/api/auth/register', userData, {
     
     });
-   
+
+    console.log(response);
+
     return response.data;
-   
   } catch (error) {
     console.error('Error register');
     throw error;

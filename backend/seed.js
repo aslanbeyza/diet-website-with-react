@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const db = require('./models');  // Assuming your models are initialized in `models/index.js`
+const db = require('./models');  
 
 // Read the JSON file
 const productData = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'productdata.json'), 'utf-8'));
@@ -29,9 +29,20 @@ async function seedDatabase() {
                 discount_percentage: product.price_info.discount_percentage,
                 ProductId: createdProduct.id  // Link the price info to the product
             });
+
+            // Handle categories
+            for (const category of product.categories) {
+                // Check if the category already exists, if not create it
+                const [createdCategory] = await db.Category.findOrCreate({
+                    where: { id: category.id }
+                });
+            
+                // Associate the product with the category
+                await createdProduct.addCategory(createdCategory);
+            }
         }
 
-        console.log('Database seeded successfully!');
+        console.log('Database seeded successfully with products and categories!');
     } catch (error) {
         console.error('Failed to seed database:', error);
     } finally {

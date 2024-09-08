@@ -1,4 +1,4 @@
-import Box from '@mui/material/Box';
+/* import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
@@ -33,4 +33,4 @@ import { Review } from '../../../interface/ReviewModelTypes';
     </Box>
   );
 };
-export default AveragePoint;
+export default AveragePoint; */

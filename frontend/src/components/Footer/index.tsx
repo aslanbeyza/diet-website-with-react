@@ -1,10 +1,25 @@
-import "./style.css";
-import { useState } from "react";
-import { Container, Grid, Typography, Link } from "@mui/material";
-import StarRating from "../StarRating/StarRating";
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Container, Grid, Typography } from '@mui/material';
+import StarRating from '../StarRating/StarRating';
+import './style.css';
 
 type Section = "products" | "categories" | "popular";
 
+// Dinamik ürün verileri örneği
+const products = [
+  { id: 1, name: 'Whey Protein' },
+  { id: 2, name: 'Cream of Rice' },
+  { id: 3, name: 'Creatine' },
+  { id: 4, name: 'BCAA+' },
+  { id: 5, name: 'Pre-Workout' },
+  { id: 6, name: 'Fitness Paketi' },
+  { id: 7, name: 'Collagen' },
+  { id: 8, name: 'Günlük Vitamin Paketi' },
+  { id: 9, name: 'ZMA' },
+];
+
+// Footer bileşeni
 const Footer = () => {
   const [accordionOpen, setAccordionOpen] = useState<Record<Section, boolean>>({
     products: true,
@@ -14,27 +29,28 @@ const Footer = () => {
 
   const toggleAccordion = (section: Section) => {
     setAccordionOpen((prev) => ({ ...prev, [section]: !prev[section] }));
-    console.log(accordionOpen);
   };
+
   return (
     <footer className="footer">
       <Container>
         <Grid container className="allContainer">
-          <Grid md={12} sm={12} xs={12} className="starsGrid">
+          <Grid item xs={12} className="starsGrid">
             <Typography variant="body2" mb={2} textAlign="start">
               <StarRating value={0} />
               (140.000+)
             </Typography>
           </Grid>
           <Grid
+            item
             className="textsWrapper"
-            md={12}
+            xs={12}
             gap={{ xs: 3, sm: 10, md: 26 }}
             sx={{
               flexDirection: { xs: "column", sm: "row" },
             }}
           >
-            <Grid item xs={12} sm={6} md={6}>
+            <Grid item xs={12} sm={6}>
               <Typography
                 variant="body2"
                 mb={6}
@@ -47,8 +63,7 @@ const Footer = () => {
                 GARANTİSİ
               </Typography>
             </Grid>
-            <Grid item xs={12} sm={6} md={6}>
-              
+            <Grid item xs={12} sm={6}>
               <Typography
                 variant="body2"
                 lineHeight={2}
@@ -61,7 +76,7 @@ const Footer = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Grid container item xs={12} md={12} className="itemContainer">
+          <Grid container item xs={12} className="itemContainer">
             <Grid
               item
               xs={12}
@@ -89,33 +104,13 @@ const Footer = () => {
                   accordionOpen.products ? "active" : ""
                 }`}
               >
-                <li>
-                  <Link href="#">Whey Protein</Link>
-                </li>
-                <li>
-                  <Link href="#">Cream of Rice</Link>
-                </li>
-                <li>
-                  <Link href="#">Creatine</Link>
-                </li>
-                <li>
-                  <Link href="#">BCAA+</Link>
-                </li>
-                <li>
-                  <Link href="#">Pre-Workout</Link>
-                </li>
-                <li>
-                  <Link href="#">Fitness Paketi</Link>
-                </li>
-                <li>
-                  <Link href="#">Collagen</Link>
-                </li>
-                <li>
-                  <Link href="#">Günlük Vitamin Paketi</Link>
-                </li>
-                <li>
-                  <Link href="#">ZMA</Link>
-                </li>
+                {products.map(product => (
+                  <li key={product.id}>
+                    <Link to={`http://localhost:5173/product/${product.id}`}>
+                      {product.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </Grid>
             <Grid item xs={12} sm={4} md={3} className="productFooter">
@@ -133,33 +128,15 @@ const Footer = () => {
                   accordionOpen.categories ? "active" : ""
                 }`}
               >
-                <li>
-                  <Link href="#">Protein</Link>
-                </li>
-                <li>
-                  <Link href="#">Spor Gıdaları</Link>
-                </li>
-                <li>
-                  <Link href="#">Sağlık</Link>
-                </li>
-                <li>
-                  <Link href="#">Gıda</Link>
-                </li>
-                <li>
-                  <Link href="#">Vitamin</Link>
-                </li>
-                <li>
-                  <Link href="#">Aksesuar</Link>
-                </li>
-                <li>
-                  <Link href="#">Tüm Ürünler</Link>
-                </li>
-                <li>
-                  <Link href="#">Paketler</Link>
-                </li>
-                <li>
-                  <Link href="#">Lansmana Özel Fırsatlar</Link>
-                </li>
+                <li><Link to="/category/protein">Protein</Link></li>
+                <li><Link to="/category/sport-foods">Spor Gıdaları</Link></li>
+                <li><Link to="/category/health">Sağlık</Link></li>
+                <li><Link to="/category/food">Gıda</Link></li>
+                <li><Link to="/category/vitamin">Vitamin</Link></li>
+                <li><Link to="/category/accessories">Aksesuar</Link></li>
+                <li><Link to="/category/all-products">Tüm Ürünler</Link></li>
+                <li><Link to="/category/packages">Paketler</Link></li>
+                <li><Link to="/category/special-offers">Lansmana Özel Fırsatlar</Link></li>
               </ul>
             </Grid>
             <Grid item xs={12} sm={4} md={3} className="productFooter">
@@ -177,42 +154,23 @@ const Footer = () => {
                   accordionOpen.popular ? "active" : ""
                 }`}
               >
-                <li>
-                  <Link href="#">Whey Protein</Link>
-                </li>
-                <li>
-                  <Link href="#">Cream of Rice</Link>
-                </li>
-                <li>
-                  <Link href="#">Creatine</Link>
-                </li>
-                <li>
-                  <Link href="#">BCAA+</Link>
-                </li>
-                <li>
-                  <Link href="#">Pre-Workout</Link>
-                </li>
-                <li>
-                  <Link href="#">Fitness Paketi</Link>
-                </li>
-                <li>
-                  <Link href="#">Collagen</Link>
-                </li>
-                <li>
-                  <Link href="#">Günlük Vitamin Paketi</Link>
-                </li>
-                <li>
-                  <Link href="#">ZMA</Link>
-                </li>
+                {products.map(product => (
+                  <li key={product.id}>
+                    <Link to={`/popular/${product.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                      {product.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </Grid>
           </Grid>
         </Grid>
         <Typography variant="body2" className="copyRight" textAlign="left">
-        Copyright &copy; - Tüm Hakları Saklıdır.
+          Copyright &copy; - Tüm Hakları Saklıdır.
         </Typography>
       </Container>
     </footer>
   );
 };
+
 export default Footer;

@@ -7,5 +7,10 @@ module.exports = (sequelize, DataTypes) => {
     role: { type: DataTypes.STRING, allowNull: false, defaultValue: 'user', validate: { isIn: [['admin', 'user']] } },
   }, { timestamps: true });
 
+
+  User.associate = function(models) {
+    // User has many reviews
+    User.hasMany(models.Review, { foreignKey: 'UserId' });
+};
   return User;
 };

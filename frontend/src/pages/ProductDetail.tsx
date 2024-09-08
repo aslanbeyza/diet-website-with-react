@@ -10,17 +10,16 @@ import {
 } from "@mui/material";
 import { ProductDetails, Variant } from "../interface/types";
 import { getProductById } from "../api/AllProducts";
-import ProductImage from "../components/ProductDetail/ProductImage";
 import ProductOptions from "../components/ProductDetail/ProductOptions";
 import ProductBenefits from "../components/ProductDetail/ProductBenefits";
 import ProductInfo from "../components/ProductDetail/ProductInfo";
 import BestSellers from "../components/BestSellers";
 import CartDrawer from "../components/ProductDetail/CartDrawer";
 import PDetails from "../components/ProductDetail/ProductDetails";
-import AveragePoint from "../components/Rewiew/ReviewList/AvaragePoint";
-import Pagination from "../components/Rewiew/ReviewList/Pagination";
-import CommentForm from "../components/Rewiew/ReviewList/CommentForm";
-import CommentList from "../components/Rewiew/ReviewList/CommentList";
+import ProductImage from "../components/ProductDetail/ProductImage";
+import CommentList from '../components/Rewiew/ReviewList/CommentList';
+import CommentForm from '../components/Rewiew/ReviewList/CommentForm';
+
 
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -34,6 +33,7 @@ const ProductDetail: React.FC = () => {
   >([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [refresh, setRefresh] = useState<boolean>(false);
 
   const decrease = () => {
     if (count > 1) {
@@ -113,7 +113,7 @@ const ProductDetail: React.FC = () => {
           setLoading(false);
         }
       } else {
-        setError("Product ID is undefined");
+        setError("Ürün ID'si tanımsız");
       }
     };
 
@@ -140,33 +140,40 @@ const ProductDetail: React.FC = () => {
     return <Typography>Ürün verileri yüklenirken bir hata oluştu.</Typography>;
   }
 
-  const flavors /* tatlar*/ = [
+  const flavors = [
     { name: "Aromasız", color: "#8d8d8d" },
     { name: "Çikolata", color: "#7B3F00" },
     { name: "Muz", color: "#FFEB3B" },
     { name: "Hindistan Cevizi", color: "#D2B48C" },
   ];
 
-  // `sizeOptions`'ı string dizisi olarak dönüştür
   const sizeOptions: number[] = Array.from(
     new Set(product.variants.map((v) => v.size.pieces))
   );
+
+  const handleCommentPosted = () => {
+    setRefresh(!refresh); // Yorum gönderildiğinde refresh state'ini değiştirerek CommentList bileşenini güncelle
+};
+
+
 
   return (
     <Container>
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "center",
-          margin: "50px",
-          boxShadow: "none",
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '50px',
+          boxShadow: 'none',
         }}
       >
-        <Card sx={{ width: "100%", padding: "20px", boxShadow: "none" }}>
+        <Card sx={{ width: '100%', padding: '20px', boxShadow: 'none' }}>
           <Grid container spacing={3}>
-            <ProductImage product={product} />
             <Grid item xs={12} md={6}>
-              <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+              <ProductImage product={product} />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Typography variant="h5" sx={{ fontWeight: 'bold' }}>
                 {product.name}
               </Typography>
               <Typography variant="h6" color="textSecondary">
@@ -205,14 +212,8 @@ const ProductDetail: React.FC = () => {
         <h2>SON GÖRÜNTÜLENEN ÜRÜNLER</h2>
       </div>
       <BestSellers />
-      {/* deneeme allaha emanet burası */}
-      <CommentList />
-      <CommentForm />
-      {/* deneme allaha emnaet burası */}
-      <Container maxWidth="md">
-        <AveragePoint productNo={0} /> {/* ProductNo'yu buradan geçirin */}
-        <Pagination />
-      </Container>
+      <CommentForm onCommentPosted={handleCommentPosted} />
+            <CommentList onReviewsUpdated={handleCommentPosted} />
       <Typography variant="h6" gutterBottom textAlign="center" mt={3}>
         Çok Satanlar
       </Typography>
@@ -227,4 +228,5 @@ const ProductDetail: React.FC = () => {
     </Container>
   );
 };
+
 export default ProductDetail;

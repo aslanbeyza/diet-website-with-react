@@ -10,7 +10,8 @@ module.exports = (sequelize, DataTypes) => {
 
     Product.associate = function(models) {
         // Product has many reviews
-        Product.hasMany(models.Review, { foreignKey: 'productId' });
+        Product.hasMany(models.Review, { foreignKey: 'ProductId' });
+        Product.hasMany(models.Category, { foreignKey: 'ProductId' });
     };
 
     return Product;

@@ -158,7 +158,7 @@ const RegisterForm: React.FC<{ handleInputChange: (e: React.ChangeEvent<HTMLInpu
       <TextField
         fullWidth
         variant="outlined"
-        name="lastname"
+        name="lastName"
         onChange={handleInputChange}
         sx={{fontWeight:'500',color:'#222222', backgroundColor: '#F7F7F7', '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#E5E5E5' } } }}
       />

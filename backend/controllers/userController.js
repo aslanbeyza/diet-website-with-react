@@ -11,14 +11,15 @@ const getAllUsers = async (req, res) => {
 
 const getUserById = async (req, res) => {
     try {
-        const { userId } = req.params; // 'user_id' yerine 'userId' kullanın
+        const { user_id } = req.params; // 'user_id' doğru şekilde kullanılmalı
 
         const user = await db.User.findOne({
-            where: { id: userId } // 'user_id' yerine 'id' kullanın
+            where: { id: user_id }, // 'user_id' ile eşleşen kullanıcıyı bul
+            include: [{ model: db.Review }],
         });
 
         if (!user) {
-            res.status(404).send('User not found');
+            return res.status(404).send('User not found');
         }
 
         res.json(user);
@@ -26,6 +27,7 @@ const getUserById = async (req, res) => {
         res.status(500).send(err.message);
     }
 };
+
 
 const createUser = async (req, res) => {
     try {

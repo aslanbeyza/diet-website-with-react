@@ -6,8 +6,10 @@ router.get('/', addressController.getAllAddresses);
 router.post('/', addressController.createAddress);
 router.get('/:id', addressController.getAddressById);
 router.put('/:id', addressController.updateAddress);
-router.delete('/:id', addressController.deleteAddress);
-router.get('/user/:id', addressController.getAddressesByUserId);
+router.delete('/:address_id', addressController.deleteAddress);
+router.get('/user/:user_id', addressController.getAddressesByUserId);
+
+
 router.get('/user/:id/default', addressController.getDefaultAddressByUserId);
 
 module.exports = router;

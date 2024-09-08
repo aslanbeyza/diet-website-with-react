@@ -2,12 +2,15 @@ module.exports = (sequelize, DataTypes) => {
     const Address = sequelize.define('Address', {
         address_line1: {type: DataTypes.STRING, required: true, allowNull: false},
         address_line2: {type: DataTypes.STRING, required: false, allowNull: true},
-        city: {type: DataTypes.STRING, required: true, allowNull: false},
-        state: {type: DataTypes.STRING, required: true, allowNull: false},
-        postal_code: {type: DataTypes.STRING, required: true, allowNull: false},
-        country: {type: DataTypes.STRING, required: true, allowNull: false},
-        is_primary: {type: DataTypes.BOOLEAN, required: true, allowNull: false, defaultValue: false},
+        city: {type: DataTypes.STRING, required: false, allowNull: true},
+        state: {type: DataTypes.STRING, required: false, allowNull: true},
+        postal_code: {type: DataTypes.STRING, required: false, allowNull: true},
+        country: {type: DataTypes.STRING, required: false, allowNull: false},
+        is_primary: {type: DataTypes.BOOLEAN, required: false, allowNull: true, defaultValue: false},
+        
     });
+   
+
 
     return Address;
 };

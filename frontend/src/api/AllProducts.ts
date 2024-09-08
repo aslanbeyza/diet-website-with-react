@@ -99,4 +99,3 @@ export const getProductById = async (id: string): Promise<ProductDetails> => {
     throw error;
   }
 };
-

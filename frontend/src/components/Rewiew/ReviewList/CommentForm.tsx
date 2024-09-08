@@ -1,103 +1,191 @@
-import { useState } from "react";
-import { TextField, Button, Box, Typography } from "@mui/material";
-import axios from "axios";
+import { useState, useCallback } from "react";
+import { jwtDecode } from "jwt-decode";
 import Cookies from "js-cookie";
-import {jwtDecode} from 'jwt-decode'; // veya import * as jwtDecode from 'jwt-decode';
-import { CustomJwtPayload } from '../../../interface/ReviewModelTypes';
+import axios from "axios";
+import debounce from "lodash/debounce"; // Lodash'tan debounce fonksiyonunu dahil ediyoruz
+import Typography from "@mui/material/Typography";
+import { Button, Modal, Rating, TextField } from "@mui/material";
+import Box from "@mui/material/Box";
 
+interface CustomJwtPayload {
+  userId: string;
+  name: string;
+  lastName: string;
+}
 
+interface CommentFormProps {
+  onCommentPosted: () => void;
+}
 
-const CommentForm = () => {
-    const [comment, setComment] = useState("");
-    const [rating, setRating] = useState(0);
+const CommentForm: React.FC<CommentFormProps> = ({ onCommentPosted }) => {
+  const [comment, setComment] = useState<string>("");
+  const [rating, setRating] = useState<number | null>(null);
+  const [openModal, setOpenModal] = useState<boolean>(false);
 
-    const handleSubmit = async (e: { preventDefault: () => void; }) => {
-      e.preventDefault();
-  
-      const token = Cookies.get('authToken');
-      console.log("TOKEN", token);
-  
+  // Debounce kullanarak 300ms içinde kullanıcı yazmayı durdurana kadar bekleyeceğiz.
+  const debouncedHandleSubmit = useCallback(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    debounce(async (e: React.FormEvent) => {
+      if (rating === null) {
+        setOpenModal(true);
+        return;
+      }
+
+      const token = Cookies.get("authToken");
       const fullPath = window.location.pathname;
-      const productNo = fullPath.substring(fullPath.lastIndexOf('/') + 1);
-      console.log("Ürün ID'si:", productNo);
-  
+      const productNo = fullPath.substring(fullPath.lastIndexOf("/") + 1);
+
       let userId: string | undefined;
+      let userName: string | undefined;
+
       if (token) {
-          try {
-              const decoded = jwtDecode<CustomJwtPayload>(token);
-              console.log( "decode" ,decoded);
-              userId = decoded.sub; // 'sub' kullanın
-              console.log("Kullanıcı ID'si:", userId);
-          } catch (error) {
-              console.error('Token çözülürken hata oluştu:', error);
-          }
+        try {
+          const decoded = jwtDecode<CustomJwtPayload>(token);
+          userId = decoded.userId;
+          const userResponse = await axios.get(
+            `http://localhost:5000/api/user/${userId}`
+          );
+          userName = `${userResponse.data.name} ${userResponse.data.lastName}`;
+        } catch (error) {
+          console.error("Token çözülürken hata oluştu:", error);
+        }
       } else {
-          console.error('Token bulunamadı.');
+        console.error("Token bulunamadı.");
       }
+
       try {
-          const response = await axios.post('http://localhost:5000/api/review', {
-              description: comment,
-              rating: rating,
-              productId: productNo,
-              userId: userId // kullanıcının id'sini dönsün
-          }, {
-              headers: {
-                  Authorization: `Bearer ${token}`, // taşıyıcı token
-                  'Content-Type': 'application/json' // Verilerin JSON formatında olduğunu belirtir
-              }
-          });
-  
-          console.log('Yorum başarıyla gönderildi:', response.data);
-          setComment("");
-          setRating(0);
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        const response = await axios.post(
+          "http://localhost:5000/api/review",
+          {
+            description: comment,
+            rating: rating,
+            ProductId: productNo,
+            UserId: userId,
+            userName: userName,
+          },
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
+            },
+          }
+        );
+ 
+
+        setComment("");
+        setRating(null);
+        if (onCommentPosted) {
+          onCommentPosted();
+        }
       } catch (error) {
-          console.error('Yorum gönderilirken hata oluştu:', error);
+        console.error("Yorum gönderilirken hata oluştu:", error);
       }
+    }, 1000), // 300ms bekleme süresi
+    [comment, rating, onCommentPosted]
+  );
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    debouncedHandleSubmit(e); // Debounced fonksiyonu çağırıyoruz
   };
-  
-    return (
-        <Box
-            component="form"
-            onSubmit={handleSubmit}
-            sx={{
-                mt: 2,
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                maxWidth: '500px',
-                mx: 'auto'
-            }}
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
+  return (
+    <Box
+      component="form"
+      onSubmit={handleSubmit}
+      sx={{
+        mt: 2,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "start",
+        maxWidth: "500px",
+        mx: "auto",
+      }}
+    >
+      <Rating
+        name="rating"
+        value={rating}
+        onChange={(_, newValue) => setRating(newValue)}
+        precision={0.5}
+        size="large"
+        sx={{ mb: 2 }}
+      />
+      <TextField
+        label="Yorumunuz"
+        value={comment}
+        onChange={(e) => setComment(e.target.value)}
+        fullWidth
+        required
+        multiline
+        rows={4}
+        variant="outlined"
+        sx={{
+          marginBottom: "2px",
+          backgroundColor: "#F7F7F7",
+          "& .MuiOutlinedInput-root": {
+            "& fieldset": { borderColor: "#E5E5E5" },
+          },
+        }}
+      />
+      <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
+        <Button
+          type="submit"
+          variant="contained"
+          color="primary"
+          sx={{ backgroundColor: "#000", color: "#fff", marginTop: "25px" }}
         >
-            <Typography variant="h5" gutterBottom>
-                Yorum Yap
-            </Typography>
-            <TextField
-                label="Yorumunuz"
-                value={comment}
-                onChange={(e) => setComment(e.target.value)}
-                fullWidth
-                required
-                multiline
-                rows={4}
-                variant="outlined"
-                sx={{ mb: 2 }}
-            />
-            <TextField
-                label="Puan"
-                type="number"
-                value={rating}
-                onChange={(e) => setRating(Number(e.target.value))}
-                fullWidth
-                required
-                inputProps={{ min: 1, max: 5 }}
-                variant="outlined"
-                sx={{ mb: 2 }}
-            />
-            <Button type="submit" variant="contained" color="primary">
-                Yorum Yap
-            </Button>
+          Yorum Yap
+        </Button>
+      </Box>
+      <Modal
+        open={openModal}
+        onClose={handleCloseModal}
+        aria-labelledby="rating-modal-title"
+        aria-describedby="rating-modal-description"
+      >
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: 400,
+            bgcolor: "background.paper",
+            border: "2px solid #000",
+            boxShadow: 24,
+            p: 4,
+          }}
+        >
+          <Typography id="rating-modal-title" variant="h6" component="h2">
+            Lütfen Puan Verin
+          </Typography>
+          <Typography id="rating-modal-description" sx={{ mt: 2 }}>
+            Yorum yapabilmek için lütfen puan vermeyi unutmayın.
+          </Typography>
+          <Rating
+            name="rating"
+            value={rating}
+            onChange={(_, newValue) => setRating(newValue)}
+            precision={0.5}
+            size="large"
+            sx={{ mb: 2 }}
+          />
+          <Button
+            onClick={handleCloseModal}
+            variant="contained"
+            sx={{ marginTop: "8px", textAlign: "end" }}
+          >
+            Kapat
+          </Button>
         </Box>
-    );
+      </Modal>
+    </Box>
+  );
 };
 
 export default CommentForm;

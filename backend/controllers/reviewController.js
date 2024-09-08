@@ -10,33 +10,17 @@ const getAllReviews = async (req, res) => {
     }
 }
 
-const getReviewById = async (req, res) => {
-    try {
-        const {review_id} = req.params;
 
-        const review = await db.Review.findOne({
-            where: {id: review_id}
-        });
-
-        if (!review) {
-            res.status(404).send('Review not found');
-        }
-
-        res.json(review);
-    } catch (err) {
-        res.status(500).send(err.message);
-    }
-}
 
 const createReview = async (req, res) => {
     try {
-        const {rating, description, productId, userId} = req.body;
+        const {rating, description, ProductId, UserId} = req.body;
 
         const createReview = await db.Review.create({
             rating,
             description,
-            productId,
-            userId,
+            ProductId,
+            UserId,
             createdAt: new Date(),
             updatedAt: new Date()
         });
@@ -51,8 +35,9 @@ const createReview = async (req, res) => {
     }
 }
 
+
 module.exports = {
     getAllReviews,
-    getReviewById,
-    createReview
+    createReview,
+  
 };

@@ -82,14 +82,14 @@ const updateAddress = async (req, res) => {
 
 const deleteAddress = async (req, res) => {
     try {
-        const {address_id} = req.params;
-
+        const { address_id } = req.params; // "address_id" yerine "id" yerine
+        console.log("adres",req.params);
         const deleteResult = await db.Address.destroy({
-            where: {id: address_id}
+            where: { id: address_id }
         });
 
-        if (!deleteResult) {
-            res.status(404).send('Address not found');
+        if (deleteResult === 0) { // Daha doğru bir kontrol
+            return res.status(404).send('Address not found');
         }
 
         res.send('Address Deleted Successfully');
@@ -97,6 +97,8 @@ const deleteAddress = async (req, res) => {
         res.status(500).send(err.message);
     }
 }
+
+
 
 const getAddressesByUserId = async (req, res) => {
     try {

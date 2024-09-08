@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import MegaMenu from './MegaMenu';
 import {
   AppBar, Toolbar, InputBase, IconButton, Box, Button, Menu, MenuItem, Typography, Link, Drawer, List, ListItem, ListItemText,
+  Modal,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -11,39 +11,80 @@ import { styled } from '@mui/material/styles';
 import Badge from '@mui/material/Badge';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import './Header.css';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { Product } from '../../interface/types';
 
+// modalStyle için stil objesi
+const modalStyle = {
+  position: 'absolute',
+  width: '95%', // Genişliği InputBase ile aynı yap
+  bgcolor: 'background.paper',
+  boxShadow: 24,
+  zIndex: 10, // Modal'ın diğer elementlerin üstünde olması için
+  borderRadius:'10px',
+  top:'2px',
+  left:'4%'
 
-
-
+};
 
 const StyledBadge = styled(Badge)(() => ({
   '& .MuiBadge-badge': {
-    right: -1,
-    top: -1,
-    padding: '0 4px',
-    backgroundColor: 'red',
+    right: 0,
+    top: 0,
+    padding: '0px',
   },
 }));
-
 const Logo = styled('img')({
   width: '100%',
 });
-
 const Header: React.FC = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [searchResults, setSearchResults] = useState<Product[]>([]);
+  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
+  const handleSearch = async (term: string) => {
+    if (term.trim() === "") {
+      setOpen(false); // Arama boşsa modal'ı kapat
+/*       setSearchResults([]);
+ */      return;
+    }
+    try {
+      const response = await axios.get(
+       ` http://localhost:5000/api/product?searchTerm=${term}`
+      );
+      const sortedResults = response.data.sort((a: Product, b: Product) => {
+        // Arama terimiyle başlayan ürün adlarını öne al
+        const aStartsWith = a.name.toLowerCase().startsWith(term.toLowerCase());
+        const bStartsWith = b.name.toLowerCase().startsWith(term.toLowerCase());
+        if (aStartsWith && !bStartsWith) return -1;
+        if (!aStartsWith && bStartsWith) return 1;
+        // Arama terimiyle olan benzerlik puanına göre sırala
+        const aMatchIndex = a.name.toLowerCase().indexOf(term.toLowerCase());
+        const bMatchIndex = b.name.toLowerCase().indexOf(term.toLowerCase());
 
+        return aMatchIndex - bMatchIndex;
+      });
+      setSearchResults(sortedResults);
 
-/*   const handleHover = (category: string) => {
-    setHovered(category);
+      setOpen(true); // Modal'ı aç
+    } catch (error) {
+      console.error("Arama hatası:", error);
+    }
   };
-  
-  const handleLeave = () => {
-    setHovered(null);
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const term = event.target.value;
+    handleSearch(term); // Her değişiklikte aramayı tetikle
+    setSearchTerm(term);
   };
- */
+  const handleProductClick = (product: Product): void => {
+    navigate(`/product/${product.id}`);
+    setOpen(false); // Modal'ı kapat
 
+  };
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -58,16 +99,16 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <AppBar position="static" sx={{display: 'flex', justifyContent: 'center', boxShadow: 'none', height: { xs: 'auto', sm: '175px', md: '169px' }, }}>
-        <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '100%', padding: 0  }}>
-          <Box sx={{ flexDirection: { xs: 'column', sm: 'row', md: 'row' }, display: 'flex', justifyContent: { xs: 'space-around', sm: 'space-between', md: 'space-between' }, width: { xs: '88%', sm: '100%', md: '80%' }, mb: { xs: '0', sm: '20px', md: '15px' } , alignItems: 'center'}}>
+      <AppBar position="static" sx={{ display: 'flex', justifyContent: 'center', boxShadow: 'none', height: { xs: 'auto', sm: '175px', md: '169px' } }}>
+        <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', maxWidth: '100%', padding: 0 }}>
+          <Box sx={{ flexDirection: { xs: 'column', sm: 'row', md: 'row' }, display: 'flex', justifyContent: { xs: 'space-around', sm: 'space-between', md: 'space-between' }, width: { xs: '88%', sm: '80%', md: '80%' }, alignItems: 'center', mb: { xs: '0px', sm: '20px', md: '20px' } }}>
             
             {/* Wrapper for Logo */}
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', width: { xs: '120%', sm: '20%', md: '15%' }, marginTop: { xs: '5%', sm: '0', md: '0' } }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', width: { xs: '120%', sm: '15%', md: '15%' }, marginTop: { xs: '5%', sm: '0', md: '0' } }}>
               <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleMobileMenuToggle} sx={{ display: { xs: 'flex', sm: 'none', md: 'none' } }}>
                 <MenuIcon />
               </IconButton>
-              <Logo src="/assets/blacklogo.png" alt="Logo" sx={{ width: { xs: '100px', sm: '100%', md: '120%' }, marginLeft: { xs: '0', sm: '-10px', md: '-5px' }, }} />
+              <Logo src="/assets/blacklogo.png" alt="Logo" sx={{ width: { xs: '100px', sm: '150%', md: '120%' }, marginLeft: { xs: '0', sm: '-80px', md: '0' }, }} />
               <Box sx={{ display: { xs: 'flex', sm: 'none', md: 'none' }, alignItems: 'center', width: { xs: '0', sm: '15%', md: '15%' } }}>
                   <StyledBadge badgeContent={1} color="secondary">
                     <ShoppingCartIcon />
@@ -75,7 +116,7 @@ const Header: React.FC = () => {
               </Box>
             </Box>
             {/* Wrapper for Search Bar */}
-            <Box sx={{ width: { xs: '100%', sm: '35%', md: '40%' }, display: 'flex', alignItems: 'center', justifyContent: 'center', mt: { xs: '25px', sm: '0', md: '0' }, mb: { xs: '10px', sm: '0', md: '0' } }}>
+            <Box sx={{ width: { xs: '100%', sm: '35%', md: '40%' },position:'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', mt: { xs: '25px', sm: '0', md: '0' }, mb: { xs: '10px', sm: '0', md: '0' } }}>
               <Box sx={{
                 borderRadius: { xs: '100px', sm: '4px', md: '4px' },
                 display: 'flex',
@@ -84,12 +125,43 @@ const Header: React.FC = () => {
                 backgroundColor: { xs: '#F3F3F3', sm: '#fff', md: '#fff' },
                 overflow: 'hidden'
               }}>
-                <InputBase sx={{ '&::placeholder': {
+                <InputBase value={searchTerm}
+              onChange={handleInputChange}
+ sx={{ '&::placeholder': {
       fontSize: { xs: '0', sm: '14px', md: '16px' }, // Ekran boyutuna göre font boyutu
     },flex: 1, paddingLeft: '8px', height: '45px' }} placeholder="Aradığınız ürünü yazınız" inputProps={{ 'aria-label': 'search' }} />
-                <Button variant="contained" sx={{ width: { xs: '100%', sm: '0px', md: '20%' },backgroundColor: '#919191', height: '45px', display: { xs: 'none', sm: 'flex', md: 'flex' },   borderRadius: { xs: '100px', sm: '4px', md: '0px' }, }}>ARA</Button>
+                <Button onClick={() => handleSearch(searchTerm)} variant="contained" sx={{ width: { xs: '100%', sm: '0px', md: '20%' },backgroundColor: '#919191', height: '45px', display: { xs: 'none', sm: 'flex', md: 'flex' },   borderRadius: { xs: '100px', sm: '4px', md: '0px' }, }}>ARA</Button>
               </Box>
+              <Modal
+    open={open}
+    onClose={() => setOpen(false)}
+    disableEnforceFocus
+    disableAutoFocus
+    sx={{
+      position: 'absolute',
+      top: '11%', // Modal'ı InputBase'in altına yerleştir
+      left: '30%',
+      width: '33%', // Genişliği InputBase ile aynı yap
+      height:'40%',
+      zIndex: 10, // Modal'ın diğer elementlerin üstünde olması için
+    }}
+  >
+    <Box sx={modalStyle}>
+      <List>
+        {searchResults.map((product) => (
+          <ListItem
+            key={product.id}
+            onClick={() => handleProductClick(product)}
+          >
+            <ListItemText primary={product.name} />
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  </Modal>
+
             </Box>
+          
             {/* Wrapper for Account and Cart Buttons */}
             <Box
               sx={{
@@ -115,8 +187,6 @@ const Header: React.FC = () => {
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
                   whiteSpace: 'nowrap',
-                  marginLeft: { xs: '0px', sm: '15px', md: '0px' },
-
                 }}
               >
                 Hesap
@@ -149,35 +219,17 @@ const Header: React.FC = () => {
             </Box>
           </Box>
         </Toolbar>
-
         <Box sx={{ display: { xs: 'none', sm: 'block', md: 'block' } }}>
-        <Box
-          sx={{
-            display: 'flex',
-            backgroundColor: '#333',
-            padding: '10px 0',
-            justifyContent: 'space-evenly',
-            '& a': { color: 'white', textDecoration: 'none' },
-            '& a:hover': { textDecoration: 'underline' },
-          }}
-        >
-          {['PROTEİN', 'SPOR GIDALARI', 'SAĞLIK', 'GIDA', 'VİTAMİN', 'TÜM ÜRÜNLER'].map((category) => (
-            <Link
-              href="#"
-              key={category}
-              /* onMouseEnter={() => handleHover(category)}
-              onMouseLeave={handleLeave}
-              onClick={() => handleHover(category)} */ // Mobil için tıklama olayı
-            >
-          {/*     {category} */}
-            </Link>
-          ))}
+          <Box sx={{ display: 'flex', backgroundColor: '#333', padding: '10px 0', justifyContent: 'space-evenly', '& a': { color: 'white', textDecoration: 'none' }, '& a:hover': { textDecoration: 'underline' } }}>
+            <Link href="#">PROTEİN</Link>
+            <Link href="#">SPOR GIDALARI</Link>
+            <Link href="#">SAĞLIK</Link>
+            <Link href="#">GIDA</Link>
+            <Link href="#">VİTAMİN</Link>
+            <Link href="#">TÜM ÜRÜNLER</Link>
+          </Box>
         </Box>
-        {/* Megamenü */}
-        <MegaMenu />
-      </Box>
       </AppBar>
-
       {/* Mobil Menu */}
       <Drawer
         anchor="left"
@@ -245,4 +297,5 @@ const Header: React.FC = () => {
     </>
   );
 };
+
 export default Header;

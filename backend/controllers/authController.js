@@ -6,7 +6,7 @@ const db = require('../models');
 
 
 const register = async (req, res) => {
-/*     console.log("me") */ 
+     console.log("me")
    const errors = validationResult(req);
    console.log("body" ,req.body);
     if (!errors.isEmpty()) {
@@ -74,23 +74,26 @@ const me = async (req, res) => {
     const token = req.header('x-auth-token');
 
     if (!token) {
-        return res.status(401).json({msg: 'No token, authorization denied'});
+        return res.status(401).json({ msg: 'No token, authorization denied' });
     }
 
     try {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        console.log('Decoded token:', decoded); // Token'ı doğru bir şekilde decode ediyor
 
         const user = await db.User.findByPk(decoded.userId);
-
+        console.log("user", user);
         if (!user) {
-            return res.status(401).json({msg: 'Invalid token'});
+            return res.status(401).json({ msg: 'Invalid token: user not found' });
         }
 
-        res.status(200).json({user: {id: user.id, name: user.name, email: user.email}});
+        res.status(200).json({ user: { id: user.id, name: user.name, email: user.email } });
     } catch (err) {
-        res.status(401).json({msg: 'Invalid token'});
+        console.error('Token verification error:', err); // Hata mesajını detaylı şekilde loglayın
+        res.status(401).json({ msg: 'Invalid token' });
     }
 };
+
 
 module.exports = {
     register,

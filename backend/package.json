@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "debug": "node --inspect server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "express-validator": "^7.2.0",
     "jsonwebtoken": "^9.0.2",
     "mssql": "^11.0.1",
+    "react-hot-loader": "^4.13.1",
     "sequelize": "^6.37.3",
     "tedious": "^18.3.0"
   }

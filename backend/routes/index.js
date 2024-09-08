@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-
 const addressRoutes = require('./address');
 const authRoutes = require('./auth');
 const categoryRoutes = require('./category');
@@ -11,6 +10,8 @@ const priceInfoRoutes = require('./priceInfo');
 const productRoutes = require('./product');
 const reviewRoutes = require('./review');
 const userRoutes = require('./user');
+
+
 
 router.use('/address', addressRoutes);
 router.use('/auth', authRoutes);
@@ -24,3 +25,5 @@ router.use('/review', reviewRoutes);
 router.use('/user', userRoutes);
 
 module.exports = router;
+
+

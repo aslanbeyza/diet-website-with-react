@@ -13,7 +13,11 @@
     "photo_src": "/media/cream-of-rice_1000_chocolate.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "30"
+    "id": "1",
+     "categories": [
+            { "id": 1 }
+           
+        ]
   },
   {
     "name": "DEXTROSE",
@@ -29,7 +33,12 @@
     "photo_src": "/media/dextrose_1000_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "32"
+    "id": "2",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
+
   },
   {
     "name": "HYALURONIC ACID",
@@ -45,7 +54,11 @@
     "photo_src": "/media/hyaluronic-acid_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "86"
+    "id": "3",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "L-TYROSINE",
@@ -61,7 +74,11 @@
     "photo_src": "/media/tyrosine_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "77"
+    "id": "4",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "PUMP STIM FREE",
@@ -77,7 +94,11 @@
     "photo_src": "/media/pump_300_peach.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "27"
+    "id": "5",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "HEAVY DUTY PRE-WORKOUT",
@@ -93,7 +114,11 @@
     "photo_src": "/media/heavy-duty-preworkout_300_apple.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "21"
+    "id": "6",
+    "categories": [
+      { "id": 1 },
+      { "id": 2 }
+  ]
   },
   {
     "name": "DEEP SLEEP",
@@ -109,7 +134,11 @@
     "photo_src": "/media/deep-sleep_150_raspberry.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "40"
+    "id": "7",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "OMEGA 3",
@@ -125,7 +154,11 @@
     "photo_src": "/media/omega3_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "63"
+    "id": "8",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "BETAINE",
@@ -137,11 +170,17 @@
       "discounted_price": null,
       "price_per_servings": 3.99,
       "discount_percentage": null
+
     },
     "photo_src": "/media/betaine_300_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "29"
+    "id": "9",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
+
   },
   {
     "name": "MICELLAR CASEIN",
@@ -157,7 +196,11 @@
     "photo_src": "/media/micellar-casein_400_strawberry.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "5"
+    "id": "5",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "ELECTROLYTE BLEND",
@@ -173,7 +216,11 @@
     "photo_src": "/media/electrolyte-blend_150_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "37"
+    "id": "11",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "GLUTAMINE",
@@ -189,7 +236,11 @@
     "photo_src": "/media/glutamine_120_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "16"
+    "id": "12",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "CREATINE",
@@ -205,7 +256,11 @@
     "photo_src": "/media/creatine_120_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "12"
+    "id": "13",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "L-THEANINE",
@@ -221,7 +276,11 @@
     "photo_src": "/media/theanine_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "78"
+    "id": "14",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "BROMELAIN",
@@ -237,7 +296,11 @@
     "photo_src": "/media/bromelain_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "84"
+    "id": "15",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "POST-WORKOUT+",
@@ -253,7 +316,11 @@
     "photo_src": "/media/post-workout-tm_720_strawberry.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "36"
+    "id": "16",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "BETA GLUCAN",
@@ -269,7 +336,11 @@
     "photo_src": "/media/beta-glucan_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "82"
+    "id": "17",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "RED DETOX+",
@@ -285,7 +356,11 @@
     "photo_src": "/media/red-detox_300_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "48"
+    "id": "18",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "VİTAMİN D3",
@@ -301,7 +376,11 @@
     "photo_src": "/media/vitamin-d3_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "68"
+    "id": "19",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "MELATONIN",
@@ -317,7 +396,11 @@
     "photo_src": "/media/melatonin_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "64"
+    "id": "20",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "VITAMIN K2",
@@ -333,7 +416,11 @@
     "photo_src": "/media/vitamin-k2_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "69"
+    "id": "21",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "BCAA 4:1:1",
@@ -349,7 +436,11 @@
     "photo_src": "/media/bcaa-411_120_apple.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "14"
+    "id": "22",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "MCT OIL",
@@ -365,7 +456,11 @@
     "photo_src": "/media/mctoil_150_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "46"
+    "id": "23",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "CHROMIUM PICOLINATE",
@@ -381,7 +476,11 @@
     "photo_src": "/media/chromium_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "72"
+    "id": "24",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "CAFFEINE",
@@ -397,7 +496,11 @@
     "photo_src": "/media/caffeine_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "26"
+    "id": "25",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "PRE-WORKOUT SUPREME",
@@ -413,7 +516,11 @@
     "photo_src": "/media/preworkout_300_apple.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "22"
+    "id": "26",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "SPINACH POWDER",
@@ -429,7 +536,11 @@
     "photo_src": "/media/spinach-powder_300_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "51"
+    "id": "27",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "SELENIUM",
@@ -445,7 +556,11 @@
     "photo_src": "/media/selenium_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "73"
+    "id": "28",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "HYDROPRIME",
@@ -461,7 +576,11 @@
     "photo_src": "/media/hydroprime_120_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "23"
+    "id": "29",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "PREBIOTICS+",
@@ -477,7 +596,11 @@
     "photo_src": "/media/prebiotics_240_peach.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "44"
+    "id": "30",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "MULTIVITAMIN",
@@ -493,7 +616,11 @@
     "photo_src": "/media/multivitamin_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "41"
+    "id": "31",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "GINGKO BILOBA",
@@ -509,7 +636,11 @@
     "photo_src": "/media/ginkgo-biloba_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "81"
+    "id": "32",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "INULIN",
@@ -525,7 +656,11 @@
     "photo_src": "/media/inulin_300_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "45"
+    "id": "33",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "EAA+",
@@ -541,7 +676,11 @@
     "photo_src": "/media/eaa_120_apple.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "17"
+    "id": "34",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "COLLAGEN",
@@ -557,7 +696,11 @@
     "photo_src": "/media/collagen_250_raspberry.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "9"
+    "id": "9",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "WHEY PROTEIN",
@@ -573,7 +716,11 @@
     "photo_src": "/media/whey-protein_400_biscuit.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "3"
+    "id": "3",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "5-HTP",
@@ -589,7 +736,11 @@
     "photo_src": "/media/5-htp_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "76"
+    "id": "37",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "TAURINE",
@@ -605,7 +756,11 @@
     "photo_src": "/media/taurine_300_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "19"
+    "id": "38",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "MACA ROOT POWDER",
@@ -621,7 +776,11 @@
     "photo_src": "/media/maca-root-powder_120_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "50"
+    "id": "39",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "PEA PROTEIN",
@@ -637,7 +796,11 @@
     "photo_src": "/media/pea-protein_400_strawberry.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "4"
+    "id": "4",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "SWEETENER",
@@ -653,7 +816,11 @@
     "photo_src": "/media/sweetener_150_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "39"
+    "id": "41",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "MILK PROTEIN",
@@ -669,7 +836,11 @@
     "photo_src": "/media/milk-protein_400_strawberry.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "7"
+    "id": "7",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "LEUCINE",
@@ -685,7 +856,11 @@
     "photo_src": "/media/leucine_300_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "20"
+    "id": "43",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "ZMA",
@@ -701,7 +876,11 @@
     "photo_src": "/media/zma_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "62"
+    "id": "44",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "GAMER MULTIVITAMIN",
@@ -717,7 +896,11 @@
     "photo_src": "/media/gamer-multi_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "55"
+    "id": "45",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "FISTIK EZMESİ",
@@ -733,7 +916,11 @@
     "photo_src": "/media/fistik-ezmesi_650_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "38"
+    "id": "46",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "ARGININE",
@@ -749,7 +936,11 @@
     "photo_src": "/media/arginine_120_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "18"
+    "id": "47",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "C VİTAMİNİ EFERVESAN",
@@ -765,7 +956,11 @@
     "photo_src": "/media/c-vitamini-efervesan_1_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "42"
+    "id": "48",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "EGG WHITE POWDER",
@@ -781,7 +976,11 @@
     "photo_src": "/media/egg-white-powder_400_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "6"
+    "id": "6",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "VITAMIN B12",
@@ -797,7 +996,11 @@
     "photo_src": "/media/b12vitamini_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "67"
+    "id": "50",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "HUNGER BUSTER",
@@ -813,7 +1016,11 @@
     "photo_src": "/media/hunger-buster_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "53"
+    "id": "51",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "GLUCOSAMINE CHONDROITIN MSM",
@@ -829,7 +1036,11 @@
     "photo_src": "/media/glucosamine_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "65"
+    "id": "52",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "CITRULLINE",
@@ -845,7 +1056,10 @@
     "photo_src": "/media/citrulline_120_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "24"
+    "id": "53",  "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "VEGAN GAINER",
@@ -861,7 +1075,10 @@
     "photo_src": "/media/vegan-gainer_2500_strawberry.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "11"
+    "id": "54",  "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "CLA",
@@ -877,7 +1094,11 @@
     "photo_src": "/media/cla-softgel_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "35"
+    "id": "55",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "BEAUTY FORMULA",
@@ -893,7 +1114,10 @@
     "photo_src": "/media/hair-nails-skin_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "59"
+    "id": "56",  "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "COENZYME Q 10",
@@ -909,7 +1133,11 @@
     "photo_src": "/media/coenzyme_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "83"
+    "id": "57",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "GLUTATHIONE",
@@ -925,7 +1153,11 @@
     "photo_src": "/media/glutathione_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "85"
+    "id": "58",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "SAW PALMETTO",
@@ -941,7 +1173,11 @@
     "photo_src": "/media/saw-palmetto_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "79"
+    "id": "59",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "GREEN DETOX+",
@@ -957,7 +1193,11 @@
     "photo_src": "/media/green-detox_300_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "47"
+    "id": "60",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "GAMER HACK",
@@ -973,7 +1213,11 @@
     "photo_src": "/media/gamer-hack_120_berryblast.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "34"
+    "id": "61",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "RELAX",
@@ -989,7 +1233,11 @@
     "photo_src": "/media/relax_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "58"
+    "id": "62",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "MILK THISTLE",
@@ -1005,7 +1253,11 @@
     "photo_src": "/media/milk-thistle_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "74"
+    "id": "63",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "DIGESTION",
@@ -1021,7 +1273,11 @@
     "photo_src": "/media/digestion_120_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "43"
+    "id": "64",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "MASS GAINER",
@@ -1037,7 +1293,11 @@
     "photo_src": "/media/mass-gainer_2500_strawberry.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "10"
+    "id": "65",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "BETA ALANINE",
@@ -1053,7 +1313,11 @@
     "photo_src": "/media/beta-alanine_300_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "28"
+    "id": "66",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "MAGNESIUM BISGLYCINATE",
@@ -1069,7 +1333,11 @@
     "photo_src": "/media/mag-bisglisinate_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "70"
+    "id": "67",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "CREATINE CREAPURE",
@@ -1085,7 +1353,11 @@
     "photo_src": "/media/creatine-creapure_250_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "13"
+    "id": "68",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "WHEY ISOLATE",
@@ -1101,7 +1373,11 @@
     "photo_src": "/media/whey-isolate_400_biscuit.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "2"
+    "id": "2",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "PANAX GINSENG",
@@ -1117,7 +1393,11 @@
     "photo_src": "/media/ginseng_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "80"
+    "id": "70",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "ULTRA FOCUS",
@@ -1133,7 +1413,11 @@
     "photo_src": "/media/ultra-mind_120_peach.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "33"
+    "id": "71",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "COLLAGEN + HYALURONIC ACID",
@@ -1149,7 +1433,11 @@
     "photo_src": "/media/collagen-tablet_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "66"
+    "id": "72",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "BROCCOLI POWDER",
@@ -1165,7 +1453,11 @@
     "photo_src": "/media/broccoli-powder_300_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "49"
+    "id": "73",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "TRIBULUS TERRESTRIS",
@@ -1181,7 +1473,11 @@
     "photo_src": "/media/tribulus-terrestris_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "75"
+    "id": "74",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "L-CARNITINE",
@@ -1197,7 +1493,11 @@
     "photo_src": "/media/l-carnitine_150_apple.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "15"
+    "id": "75",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "LVR",
@@ -1213,7 +1513,11 @@
     "photo_src": "/media/liver_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "56"
+    "id": "76",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "FOCUS FORMULA",
@@ -1229,7 +1533,11 @@
     "photo_src": "/media/ultra-brain_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "60"
+    "id": "77",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "GDA",
@@ -1245,7 +1553,11 @@
     "photo_src": "/media/gda_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "61"
+    "id": "78",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "MALTODEXTRIN",
@@ -1261,7 +1573,11 @@
     "photo_src": "/media/maltodextrin_2500_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "31"
+    "id": "79",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "PARSLEY POWDER",
@@ -1277,7 +1593,11 @@
     "photo_src": "/media/parsley-powder_300_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "52"
+    "id": "80",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "T-PRIME",
@@ -1293,7 +1613,11 @@
     "photo_src": "/media/tprime_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "54"
+    "id": "81",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "SOYA PROTEIN",
@@ -1309,7 +1633,12 @@
     "photo_src": "/media/soya-protein_400_strawberry.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "8"
+    "id": "8",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
+
   },
   {
     "name": "IRON",
@@ -1325,7 +1654,11 @@
     "photo_src": "/media/iron_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "71"
+    "id": "83",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "KDNY",
@@ -1341,7 +1674,11 @@
     "photo_src": "/media/kidney_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "57"
+    "id": "84",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   },
   {
     "name": "THERMO BURNER",
@@ -1357,6 +1694,10 @@
     "photo_src": "/media/burner_.webp",
     "comment_count": 0,
     "average_star": 0.0,
-    "id": "25"
+    "id": "85",
+     "categories": [
+            { "id": 1 },
+            { "id": 2 }
+        ]
   }
 ]

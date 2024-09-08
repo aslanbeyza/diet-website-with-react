@@ -1,23 +1,15 @@
-.loginRegisterContainer {
+.login-register-container {
     text-align: left;
     border: 1px solid #F3F3F3;
     padding:1rem;
     margin: 4rem;
 }
-.tabsContainer {
- margin-bottom:4rem;
- position: relative;
- padding: 0%;
- margin: 0%;
-  }
 
-  .tabs{
-    position: absolute;
-    top: -64;
-    width: 100%;
-    border-bottom: none;
-
-  }
+  
+    .tabs-container {
+     margin-bottom:4rem;
+    }
+   
   .tab-selected{
     background-color:white !important ;
     color:#2126AB !important;
@@ -33,4 +25,3 @@
 .tabs-container .MuiTabs-flexContainer {
   justify-content: space-between; /* Tab'lar arasındaki boşluğu artırır */
 }
-

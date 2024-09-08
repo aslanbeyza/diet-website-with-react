@@ -17,7 +17,20 @@ export interface Review {
     updatedAt: string;
   }
 
+  export interface ReviewDatabase {
+    rating: number | undefined;
+    id: number;
+    userId: number;
+    description: string;
+    productId: number;
+    createdAt: string;
+    updatedAt: string;
+  }
+ 
+
   export interface CustomJwtPayload extends jwtDecode.JwtPayload {
+    id: any;
+    UserId: string|number|undefined|null;
     userId?: number; // veya string, token'daki türüne göre
   }
   
